@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>傳說對決活動入口</title>
+  
+   <!-- Threads / Facebook / LINE 分享預覽 -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://csdjfly-jg.github.io/csdjfly.github.io-jingcsdj/">
+  <meta property="og:title" content="傳說對決限時福利">
+  <meta property="og:description" content="造型三選一活動入口">
+  <meta property="og:image" content="https://csdjfly-jg.github.io/csdjfly.github.io-jingcsdj/csdjbj.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
+  <!-- Twitter / Threads 大圖卡片 -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="傳說對決限時福利">
+  <meta name="twitter:description" content="造型三選一活動入口">
+  <meta name="twitter:image" content="https://csdjfly-jg.github.io/csdjfly.github.io-jingcsdj/csdjbj.jpg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
+      background-color: #0a0a0a; /* 先給黑色底，秒開 */
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* 背景圖淡入，傳說對決主題 */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("csdjbj.jpg") center center / cover no-repeat;
+      background-color: rgba(10, 10, 10, 0.8);
+      background-blend-mode: multiply;
+      opacity: 0;
+      animation: fadeInBg 0.6s ease-out 0.1s forwards;
+      z-index: -1;
+    }
+
+    @keyframes fadeInBg {
+      to { opacity: 1; }
+    }
+    
+    .container { 
+      text-align: center; 
+      max-width: 500px;
+      animation: fadeInUp 0.5s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    h1 { 
+      font-size: 42px; 
+      color: #e4b140; /* 傳說對決金色 */
+      margin-bottom: 20px; 
+      font-weight: 900;
+      text-shadow: 3px 3px 0 #8b0000; /* 深紅描邊 */
+    }
+    
+    p { 
+      font-size: 18px; 
+      color: #e4b140; 
+      font-weight: bold; 
+      margin-bottom: 30px; 
+    }
+    
+    .btn {
+      background: linear-gradient(180deg, #e4b140 0%, #c89632 100%); 
+      color: #000; 
+      padding: 18px 50px;
+      text-decoration: none; 
+      border-radius: 8px; 
+      font-size: 22px;
+      font-weight: bold; 
+      display: inline-block; 
+      transition: 0.2s;
+      box-shadow: 0 4px 0 #8b4513;
+      border: 2px solid #8b0000;
+    }
+    
+    .btn:hover { 
+      transform: scale(1.05); 
+      box-shadow: 0 6px 0 #8b4513;
+    }
+    
+    .btn:active {
+      transform: scale(1.02);
+      box-shadow: 0 2px 0 #8b4513;
+    }
+    
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #e4b140;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="avatar" src="csdj.jpg" alt="頭貼">
+    <h1>傳說對決限時福利</h1>
+    <p>造型三選一活動入口</p>
+    <a class="btn" href="https://lin.ee/ohLHozf">立即領取免費福利</a>
+  </div>
+</body>
+</html>
